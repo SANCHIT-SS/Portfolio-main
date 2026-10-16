@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hiring Crisis Case Study | Sanchit Singh Sikarwar</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Uses your existing style.css file! -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="case-study-page">
+
+    <!-- Simplified Header for Subpages -->
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio.</a>
+        <nav class="navbar active" style="display: block;">
+            <a href="index.html" class="active"><i class='bx bx-left-arrow-alt'></i> Back to Home</a>
+        </nav>
+    </header>
+
+    <!-- Case Study Content Section -->
+    <section class="case-study-section">
+        
+        <!-- 1. The Title -->
+        <h1 class="case-title">The Hiring Crisis: Automated Resume Screening</h1>
+
+        <!-- 2. The Embedded Video -->
+        <div class="video-container">
+            <!-- If your video is a file in your assets folder, use this: -->
+            <video controls poster="aseets/icons/The Hiring.jpg">
+                <source src="The Hiring Crisis/5-Minute Video Pitch.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <!-- NOTE: If your video is on YouTube, delete the <video> tag above and paste the YouTube <iframe> embed code right here instead -->
+        </div>
+
+        <!-- 3. The Write-up -->
+        <div class="case-writeup">
+            
+            <h3>The Brain</h3>
+            <p>To solve the problem of recruiter "resume fatigue," I engineered a deterministic linear workflow using n8n to orchestrate the backend agent. The core intelligence relies on OpenAI and Anthropic APIs to perform advanced semantic analysis, evaluating candidate context and potential rather than relying on outdated, simple keyword matching. To guarantee stability and prevent the UI from breaking, I utilized prompt engineering to enforce a strict JSON schema output ({"score": number, "summary": string}) from the LLM.</p>
+
+            <h3>Key Features</h3>
+            <ul>
+                <li>Automated Semantic Scoring: The agent instantly ingests batch uploads of resumes, compares them against the job description, and assigns a definitive 0-100 match score.</li>
+                <li>Transparent Reasoning Engine: To eliminate decision fatigue, the system is engineered to generate a precise, one-sentence summary explaining exactly why a candidate fits the role.</li>
+                <li>Actionable Leaderboard UI: The Lovable frontend shifts the user experience from "searching" to "validating" by presenting a ranked leaderboard complete with dynamic, one-click action buttons (e.g., "Invite to Interview").</li>
+            </ul>
+
+            <h3>Impact</h3>
+            <p>Drove a 99% time savings by reducing the North Star Metric, "Time-to-Shortlist," from 3 days to under 10 minutes.</p>
+            <p>Maintained a 90% screening accuracy rate, ensuring high alignment between AI-flagged candidates and human recruiter approval.</p>
+            <h3>Skills & Tools Used</h3>
+            <p>Agentic AI, Lovable, n8n, Python, Prompt Engineering, LLMs.</p>
+        </div>
+
+        <!-- 4. The Action Buttons -->
+        <div class="case-actions">
+            <!-- Replace the # with your actual Google Drive and Lovable links -->
+            <a href="https://drive.google.com/drive/folders/1ZA14dxp9mtmbNDS_S7APQ8hP4QnwFcPb?usp=drive_link" target="_blank" class="btn"><i class='bx bxl-google-cloud'></i> View Architecture (PDF)</a>
+         
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by Sanchit Singh Sikarwar | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
