@@ -9,7 +9,8 @@
 
     <!-- Google Fonts Integration (Poppins) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <!-- NEW: Devicon CDN for Tech Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <!-- Favicon (Laptop Emoji trick to prevent 404 errors) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
     
@@ -18,12 +19,13 @@
 
     <!-- Main Stylesheet Connection -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     
     <!-- ==================== HEADER / NAVBAR ==================== -->
     <header class="header">
-        <a href="#" class="logo">Portfolio.</a>
+        <a href="#" class="logo">Think Big Take Small Steps</a>
 
         <!-- Mobile Menu Hamburger Icon -->
          
@@ -34,7 +36,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Project</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -66,8 +68,8 @@
 
         <div class="home-img">
             <div class="img-box">
-                <!-- Profile Picture -->
-                <img src="icons/Profile picture.jpg" alt="Sanchit Singh Sikarwar">
+                <!-- Profile Picture (Must be inside this div!) -->
+                <img src="https://github.com/SANCHIT-SS/Portfolio-main/blob/main/IMG_20240801_141133_528.jpg?raw=true" alt="Sanchit Singh Sikarwar">
             </div>
         </div>
 
@@ -76,11 +78,7 @@
     <!-- ==================== ABOUT SECTION ==================== -->
     <section class="about" id="about">
         
-        <div class="about-img">
-            <div class="img-box">
-                 <!-- Profile Picture (Mirrored for consistency) -->
-                 <img src="icons/Profile picture.jpg" alt="Sanchit Singh Sikarwar">
-            </div>
+     
         </div>
 
         <div class="about-content">
@@ -127,143 +125,147 @@
     <section class="skills" id="skills">
         <h2 class="heading">Technical <span>Skills</span></h2>
 
-        <div class="skills-container">
-            
-            <!-- Category 1: Languages & Core Tech -->
+       <!-- Category 1: Languages & Core Tech -->
             <div class="skill-category">
                 <h3>LANGUAGES</h3>
                 <div class="skill-grid">
-                    <!-- Skill Box: Java -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/java.png" alt="Java">
+                            <!-- Devicon Java -->
+                            <i class="devicon-java-plain colored"></i>
                         </div>
                         <span>Java</span>
                     </div>
-                    <!-- Skill Box: C++ -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/c-.png" alt="C++">
+                            <!-- Devicon C++ -->
+                            <i class="devicon-cplusplus-plain colored"></i>
                         </div>
                         <span>C++</span>
                     </div>
-                    <!-- Skill Box: Python -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/icons8-python-64.png" alt="Python">
+                            <!-- Devicon Python -->
+                            <i class="devicon-python-plain colored"></i>
                         </div>
                         <span>Python</span>
                     </div>
-                    <!-- Skill Box: SQL -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/icons8-sql-64.png" alt="SQL">
+                            <!-- Devicon SQL -->
+                            <i class="devicon-azuresqldatabase-plain colored"></i>
                         </div>
                         <span>SQL</span>
                     </div>
-                    <!-- Future: Copy a skill-box block and paste here to add more languages -->
                 </div>
             </div>
 
-            <!-- Category 2: AI & Automation -->
+<!-- Category 2: AI & Automation -->
             <div class="skill-category">
                 <h3>AI & AUTOMATION</h3>
                 <div class="skill-grid">
+                    <!-- Agentic AI Box -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/onboarding.png" alt="Agentic AI">
+                            <!-- Network/Bot Icon for Agentic AI -->
+                            <i class='bx bx-network-chart' style='color:#00abf0;'></i>
                         </div>
                         <span>Agentic AI</span>
                     </div>
+                    <!-- LLM Box -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/artificial-intelligence.png" alt="LLM">
+                            <!-- Brain Icon for LLMs -->
+                            <i class='bx bx-brain' style='color:#ff5722;'></i>
                         </div>
                         <span>LLM</span>
                     </div>
+                    <!-- Cursor Box -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/icons8-cursor-ai-48.png" alt="Cursor">
+                            <!-- Code Block Icon for Cursor -->
+                            <i class='bx bx-code-block' style='color:#4caf50;'></i>
                         </div>
                         <span>Cursor</span>
                     </div>
+                    <!-- Lovable Box -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/lovable-ai-icon.png" alt="Lovable">
+                            <!-- Heart Builder Icon for Lovable -->
+                            <i class='bx bxs-heart-circle' style='color:#e91e63;'></i>
                         </div>
                         <span>Lovable</span>
                     </div>
-                    <!-- Future: Copy a skill-box block and paste here to add more AI skills -->
                 </div>
             </div>
 
             <!-- Category 3: Design & Product Tools -->
+<!-- Category 3: Design & Product Tools -->
             <div class="skill-category">
                 <h3>PRODUCT & DESIGN</h3>
                 <div class="skill-grid">
+                    <!-- Figma Box -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/icons8-figma-48.png" alt="Figma">
+                            <!-- Devicon's official colored Figma logo -->
+                            <i class="devicon-figma-plain colored"></i>
                         </div>
                         <span>Figma</span>
                     </div>
+                    <!-- Notion Box -->
                     <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/icons8-notion-64.png" alt="Notion">
+                            <!-- Boxicon Notebook for Notion (White) -->
+                            <i class='bx bxs-book-content' style='color:#ffffff;'></i>
                         </div>
                         <span>Notion</span>
                     </div>
-                     <div class="skill-box">
+                    <!-- Miro Box -->
+                    <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/icons8-miro-64.png" alt="Miro">
+                            <!-- Boxicon Workspace/Board for Miro (Miro Yellow) -->
+                            <i class='bx bxs-dashboard' style='color:#ffd02f;'></i>
                         </div>
                         <span>Miro</span>
                     </div>
-                     <div class="skill-box">
+                    <!-- Gamma Box -->
+                    <div class="skill-box">
                         <div class="icon-circle">
-                            <img src="icons/Icon.png" alt="Gamma">
+                            <!-- Boxicon Presentation for Gamma (AI Purple) -->
+                            <i class='bx bxs-slideshow' style='color:#a855f7;'></i>
                         </div>
                         <span>Gamma</span>
                     </div>
-                    <!-- Future: Copy a skill-box block and paste here to add more tools -->
                 </div>
             </div>
-
-        </div>
     </section>
 
     <!-- ==================== PORTFOLIO SECTION ==================== -->
-    <section class="portfolio" id="portfolio">
+<section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="portfolio-container">
+            
             <!-- Project 1: Travel Copilot -->
             <div class="portfolio-box">
-                <img src="icons/Travel Co-Pilot.jpg" alt="Travel Copilot" class="portfolio-img">
+                <!-- Embedded the Travel Co-Pilot GitHub Image -->
+                <img src="https://github.com/SANCHIT-SS/Portfolio-main/blob/main/1767793707024.jpg?raw=true" alt="Travel Copilot" class="portfolio-img">
                 <div class="portfolio-layer">
                     <h4>Travel Copilot</h4>
-                    <!-- Future: Add a <p> tag here if you want description text to show on hover -->
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
-            <!-- Project 2: Hiremate -->
+            <!-- Project 2: The Hiring Crisis -->
             <div class="portfolio-box">
-                <img src="icons/Hiremate.jpg" alt="Hiremate" class="portfolio-img"> 
-                <div class="portfolio-layer">
-                    <h4>Hiremate</h4>
-                    <!-- Future: Add a <p> tag here if you want description text to show on hover -->
-                </div>
-            </div>
-
-            <!-- Project 3: The Resume Black Hole -->
-            <div class="portfolio-box">
-                <img src="icons/The Hiring.jpg" alt="The Hiring Crisis" class="portfolio-img">
+                <!-- Embedded The Hiring Crisis GitHub Image -->
+                <img src="https://github.com/SANCHIT-SS/Portfolio-main/blob/main/1766472634872.jpg?raw=true" alt="The Hiring Crisis" class="portfolio-img">
                 <div class="portfolio-layer">
                     <h4>The Hiring Crisis</h4>
-                    <!-- Updated Link Here -->
                     <a href="the-hiring-crisis.html"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
+
         </div>
     </section>
 
