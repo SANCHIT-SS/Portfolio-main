@@ -382,9 +382,17 @@ span {
 }
 
 .icon-circle img {
-    width: 3.5rem; /* Standardizes icon sizing perfectly */
+    width: 3.5rem; 
     height: 3.5rem;
     object-fit: contain;
+}
+
+/* NEW: Sizes the Devicon vector icons perfectly inside the circle */
+.icon-circle i {
+    font-size: 3.5rem; /* This scales the vector font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill-box span {
